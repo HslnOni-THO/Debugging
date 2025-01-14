@@ -5,8 +5,8 @@ def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1  
+        n -= 1  # Decrement n to avoid infinite loop
     return result
 
-f = factorial(int(sys.argv[1]))  # je prend ici l'argument de la ligne de commande
+f = factorial(int(sys.argv[1]))
 print(f)
